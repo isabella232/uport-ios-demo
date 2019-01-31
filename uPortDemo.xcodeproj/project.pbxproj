@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
+		48B036A1220351AE0067A2D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036A0220351AE0067A2D9 /* ViewController.swift */; };
+		48B036A4220351AE0067A2D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A2220351AE0067A2D9 /* Main.storyboard */; };
+		48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A5220351AF0067A2D9 /* Assets.xcassets */; };
+		48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */; };
+		48B036B4220351AF0067A2D9 /* uPortDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036B3220351AF0067A2D9 /* uPortDemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48B036B0220351AF0067A2D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B03693220351AE0067A2D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48B0369A220351AE0067A2D9;
+			remoteInfo = uPortDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48B0369B220351AE0067A2D9 /* uPortDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uPortDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B0369E220351AE0067A2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48B036A0220351AE0067A2D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48B036A3220351AE0067A2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48B036A5220351AF0067A2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48B036A8220351AF0067A2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48B036AA220351AF0067A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B036AF220351AF0067A2D9 /* uPortDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uPortDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B036B3220351AF0067A2D9 /* uPortDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uPortDemoTests.swift; sourceTree = "<group>"; };
+		48B036B5220351AF0067A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B03698220351AE0067A2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B036AC220351AF0067A2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48B03692220351AE0067A2D9 = {
+			isa = PBXGroup;
+			children = (
+				48B0369D220351AE0067A2D9 /* uPortDemo */,
+				48B036B2220351AF0067A2D9 /* uPortDemoTests */,
+				48B0369C220351AE0067A2D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48B0369C220351AE0067A2D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48B0369B220351AE0067A2D9 /* uPortDemo.app */,
+				48B036AF220351AF0067A2D9 /* uPortDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B0369D220351AE0067A2D9 /* uPortDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48B0369E220351AE0067A2D9 /* AppDelegate.swift */,
+				48B036A0220351AE0067A2D9 /* ViewController.swift */,
+				48B036A2220351AE0067A2D9 /* Main.storyboard */,
+				48B036A5220351AF0067A2D9 /* Assets.xcassets */,
+				48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */,
+				48B036AA220351AF0067A2D9 /* Info.plist */,
+			);
+			path = uPortDemo;
+			sourceTree = "<group>";
+		};
+		48B036B2220351AF0067A2D9 /* uPortDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				48B036B3220351AF0067A2D9 /* uPortDemoTests.swift */,
+				48B036B5220351AF0067A2D9 /* Info.plist */,
+			);
+			path = uPortDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48B0369A220351AE0067A2D9 /* uPortDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B036B8220351AF0067A2D9 /* Build configuration list for PBXNativeTarget "uPortDemo" */;
+			buildPhases = (
+				48B03697220351AE0067A2D9 /* Sources */,
+				48B03698220351AE0067A2D9 /* Frameworks */,
+				48B03699220351AE0067A2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uPortDemo;
+			productName = uPortDemo;
+			productReference = 48B0369B220351AE0067A2D9 /* uPortDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48B036AE220351AF0067A2D9 /* uPortDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B036BB220351AF0067A2D9 /* Build configuration list for PBXNativeTarget "uPortDemoTests" */;
+			buildPhases = (
+				48B036AB220351AF0067A2D9 /* Sources */,
+				48B036AC220351AF0067A2D9 /* Frameworks */,
+				48B036AD220351AF0067A2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B036B1220351AF0067A2D9 /* PBXTargetDependency */,
+			);
+			name = uPortDemoTests;
+			productName = uPortDemoTests;
+			productReference = 48B036AF220351AF0067A2D9 /* uPortDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B03693220351AE0067A2D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ConsenSys;
+				TargetAttributes = {
+					48B0369A220351AE0067A2D9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					48B036AE220351AF0067A2D9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 48B0369A220351AE0067A2D9;
+					};
+				};
+			};
+			buildConfigurationList = 48B03696220351AE0067A2D9 /* Build configuration list for PBXProject "uPortDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48B03692220351AE0067A2D9;
+			productRefGroup = 48B0369C220351AE0067A2D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48B0369A220351AE0067A2D9 /* uPortDemo */,
+				48B036AE220351AF0067A2D9 /* uPortDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48B03699220351AE0067A2D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */,
+				48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */,
+				48B036A4220351AE0067A2D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B036AD220351AF0067A2D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48B03697220351AE0067A2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B036A1220351AE0067A2D9 /* ViewController.swift in Sources */,
+				48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B036AB220351AF0067A2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B036B4220351AF0067A2D9 /* uPortDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48B036B1220351AF0067A2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48B0369A220351AE0067A2D9 /* uPortDemo */;
+			targetProxy = 48B036B0220351AF0067A2D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48B036A2220351AE0067A2D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B036A3220351AE0067A2D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B036A8220351AF0067A2D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48B036B6220351AF0067A2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48B036B7220351AF0067A2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48B036B9220351AF0067A2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uPortDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48B036BA220351AF0067A2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uPortDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48B036BC220351AF0067A2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uPortDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uPortDemo.app/uPortDemo";
+			};
+			name = Debug;
+		};
+		48B036BD220351AF0067A2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uPortDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uPortDemo.app/uPortDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48B03696220351AE0067A2D9 /* Build configuration list for PBXProject "uPortDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B036B6220351AF0067A2D9 /* Debug */,
+				48B036B7220351AF0067A2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B036B8220351AF0067A2D9 /* Build configuration list for PBXNativeTarget "uPortDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B036B9220351AF0067A2D9 /* Debug */,
+				48B036BA220351AF0067A2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B036BB220351AF0067A2D9 /* Build configuration list for PBXNativeTarget "uPortDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B036BC220351AF0067A2D9 /* Debug */,
+				48B036BD220351AF0067A2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B03693220351AE0067A2D9 /* Project object */;
+}
