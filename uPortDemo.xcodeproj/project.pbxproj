@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
-		48B036A1220351AE0067A2D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036A0220351AE0067A2D9 /* ViewController.swift */; };
-		48B036A4220351AE0067A2D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A2220351AE0067A2D9 /* Main.storyboard */; };
 		48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A5220351AF0067A2D9 /* Assets.xcassets */; };
 		48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */; };
 		48B036B4220351AF0067A2D9 /* uPortDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036B3220351AF0067A2D9 /* uPortDemoTests.swift */; };
+		48B036BF2203934B0067A2D9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036BE2203934B0067A2D9 /* MenuViewController.swift */; };
+		48B036C1220395840067A2D9 /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C0220395840067A2D9 /* Styling.swift */; };
+		48B036C522039DDF0067A2D9 /* JWTVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C422039DDF0067A2D9 /* JWTVerificationViewController.swift */; };
+		48B036C722039E360067A2D9 /* UniversalDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */; };
+		48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */; };
+		48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */; };
+		48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +33,19 @@
 /* Begin PBXFileReference section */
 		48B0369B220351AE0067A2D9 /* uPortDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uPortDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B0369E220351AE0067A2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48B036A0220351AE0067A2D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48B036A3220351AE0067A2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B036A5220351AF0067A2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B036A8220351AF0067A2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B036AA220351AF0067A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48B036AF220351AF0067A2D9 /* uPortDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uPortDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B036B3220351AF0067A2D9 /* uPortDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uPortDemoTests.swift; sourceTree = "<group>"; };
 		48B036B5220351AF0067A2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B036BE2203934B0067A2D9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		48B036C0220395840067A2D9 /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		48B036C422039DDF0067A2D9 /* JWTVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTVerificationViewController.swift; sourceTree = "<group>"; };
+		48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalDIDResolverViewController.swift; sourceTree = "<group>"; };
+		48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPortDIDResolverViewController.swift; sourceTree = "<group>"; };
+		48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthDIDResolverViewController.swift; sourceTree = "<group>"; };
+		48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWTVerificationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,14 @@
 		48B0369D220351AE0067A2D9 /* uPortDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48B036AA220351AF0067A2D9 /* Info.plist */,
 				48B0369E220351AE0067A2D9 /* AppDelegate.swift */,
-				48B036A0220351AE0067A2D9 /* ViewController.swift */,
-				48B036A2220351AE0067A2D9 /* Main.storyboard */,
+				48B036C0220395840067A2D9 /* Styling.swift */,
+				48B036BE2203934B0067A2D9 /* MenuViewController.swift */,
+				48B036C222039DA30067A2D9 /* JWT */,
+				48B036C322039DAA0067A2D9 /* DID Resolving */,
 				48B036A5220351AF0067A2D9 /* Assets.xcassets */,
 				48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */,
-				48B036AA220351AF0067A2D9 /* Info.plist */,
 			);
 			path = uPortDemo;
 			sourceTree = "<group>";
@@ -94,6 +106,25 @@
 				48B036B5220351AF0067A2D9 /* Info.plist */,
 			);
 			path = uPortDemoTests;
+			sourceTree = "<group>";
+		};
+		48B036C222039DA30067A2D9 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				48B036C422039DDF0067A2D9 /* JWTVerificationViewController.swift */,
+				48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
+		48B036C322039DAA0067A2D9 /* DID Resolving */ = {
+			isa = PBXGroup;
+			children = (
+				48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */,
+				48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */,
+				48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */,
+			);
+			path = "DID Resolving";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */,
+				48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */,
 				48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */,
-				48B036A4220351AE0067A2D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B036A1220351AE0067A2D9 /* ViewController.swift in Sources */,
+				48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */,
+				48B036C722039E360067A2D9 /* UniversalDIDResolverViewController.swift in Sources */,
+				48B036BF2203934B0067A2D9 /* MenuViewController.swift in Sources */,
+				48B036C522039DDF0067A2D9 /* JWTVerificationViewController.swift in Sources */,
+				48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */,
+				48B036C1220395840067A2D9 /* Styling.swift in Sources */,
 				48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +257,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48B036A2220351AE0067A2D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48B036A3220351AE0067A2D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
