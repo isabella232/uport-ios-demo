@@ -35,6 +35,13 @@ class MenuViewController: UITableViewController
         self.title = "uPort Demo Menu"
     }
 
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+
+        Styling.addLogoBackground(to: self.tableView)
+    }
+
     required init?(coder aDecoder: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")

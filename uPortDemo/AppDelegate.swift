@@ -21,8 +21,13 @@ import UIKit
         let menuViewController = MenuViewController()
         let navigationController = UINavigationController(rootViewController: menuViewController)
 
+        Styling.styleNavigationBars()
+
         window!.rootViewController = navigationController
         window!.makeKeyAndVisible()
+
+        // Keep LaunchScreen visible a bit longer.
+        RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1) as Date)
 
         return true
     }
