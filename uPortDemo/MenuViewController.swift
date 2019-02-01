@@ -14,13 +14,13 @@ class MenuViewController: UITableViewController
     private var structure =
     [
         [
-            "JWT" :
+            "JSON Web Tokens" :
             [
-                [ "Verification" : JWTVerificationViewController.self ]
+                [ "JWT Verification" : JWTVerificationViewController.self ]
             ]
         ],
         [
-            "DID Resolving" :
+            "Resolving DIDs" :
             [
                 [ "uPort DID Resolver" : UPortDIDResolverViewController.self ],
                 [ "Eth DID Resolver" : EthDIDResolverViewController.self ],
@@ -32,7 +32,7 @@ class MenuViewController: UITableViewController
     required init()
     {
         super.init(style: .grouped)
-        self.title = "uPort Demo Menu"
+        self.title = "Menu"
     }
 
     override func viewDidLoad()
@@ -87,6 +87,7 @@ class MenuViewController: UITableViewController
     {
         let items = structure[indexPath.section].values.first!
         let viewController = items[indexPath.row].values.first!.init()
+        viewController.title = items[indexPath.row].keys.first
 
         navigationController?.pushViewController(viewController, animated: true)
     }

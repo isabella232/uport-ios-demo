@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
 		48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A5220351AF0067A2D9 /* Assets.xcassets */; };
 		48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 		48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */; };
 		48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */; };
 		48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */; };
+		48B036D2220466BE0067A2D9 /* UPort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,19 @@
 			remoteInfo = uPortDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		488280FC22047BC10023AD23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48B0369B220351AE0067A2D9 /* uPortDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uPortDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +61,7 @@
 		48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPortDIDResolverViewController.swift; sourceTree = "<group>"; };
 		48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthDIDResolverViewController.swift; sourceTree = "<group>"; };
 		48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWTVerificationViewController.xib; sourceTree = "<group>"; };
+		48B036D1220466BE0067A2D9 /* UPort.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPort.framework; path = Carthage/Build/iOS/UPort.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B036D2220466BE0067A2D9 /* UPort.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +89,7 @@
 				48B0369D220351AE0067A2D9 /* uPortDemo */,
 				48B036B2220351AF0067A2D9 /* uPortDemoTests */,
 				48B0369C220351AE0067A2D9 /* Products */,
+				48B036D0220466BE0067A2D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +145,14 @@
 			path = "DID Resolving";
 			sourceTree = "<group>";
 		};
+		48B036D0220466BE0067A2D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B036D1220466BE0067A2D9 /* UPort.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +163,7 @@
 				48B03697220351AE0067A2D9 /* Sources */,
 				48B03698220351AE0067A2D9 /* Frameworks */,
 				48B03699220351AE0067A2D9 /* Resources */,
+				488280FC22047BC10023AD23 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -389,6 +416,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = uPortDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,6 +437,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = uPortDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

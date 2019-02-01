@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import UPort
 
 class JWTVerificationViewController : UIViewController
 {
+    required init()
+    {
+        super.init(nibName: "JWTVerificationViewController", bundle: nil)
+        print("called")
+    }
 
+    required init?(coder aDecoder: NSCoder)
+    {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
