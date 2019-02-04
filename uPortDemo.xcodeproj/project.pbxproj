@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		488280FF22049B010023AD23 /* UniversalDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */; };
+		4882810122049B1A0023AD23 /* UPortDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */; };
+		4882810322049B3C0023AD23 /* EthDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */; };
 		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
 		48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A5220351AF0067A2D9 /* Assets.xcassets */; };
 		48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */; };
@@ -46,6 +49,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversalDIDResolverViewController.xib; sourceTree = "<group>"; };
+		4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPortDIDResolverViewController.xib; sourceTree = "<group>"; };
+		4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EthDIDResolverViewController.xib; sourceTree = "<group>"; };
 		48B0369B220351AE0067A2D9 /* uPortDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uPortDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B0369E220351AE0067A2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B036A5220351AF0067A2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,8 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */,
+				488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */,
 				48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */,
+				4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */,
 				48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */,
+				4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */,
 			);
 			path = "DID Resolving";
 			sourceTree = "<group>";
@@ -236,7 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */,
+				4882810122049B1A0023AD23 /* UPortDIDResolverViewController.xib in Resources */,
 				48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */,
+				488280FF22049B010023AD23 /* UniversalDIDResolverViewController.xib in Resources */,
+				4882810322049B3C0023AD23 /* EthDIDResolverViewController.xib in Resources */,
 				48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

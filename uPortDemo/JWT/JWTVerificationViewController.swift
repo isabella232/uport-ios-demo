@@ -28,12 +28,12 @@ class JWTVerificationViewController : UIViewController
 {
     @IBOutlet var incomingJwtLabel: UILabel!
     @IBOutlet var payloadLabel: UILabel!
+    @IBOutlet var verifyButton: UIButton!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
     required init()
     {
         super.init(nibName: "JWTVerificationViewController", bundle: nil)
-        print("called")
     }
 
     required init?(coder aDecoder: NSCoder)
@@ -41,9 +41,14 @@ class JWTVerificationViewController : UIViewController
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad()
+    override func viewWillAppear(_ animated: Bool)
     {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
+
+        self.view.backgroundColor = Styling.backgroundGrey
+        Styling.addLogoBackground(to: self.view)
+
+        Styling.styleButton(self.verifyButton)
 
         self.incomingJwtLabel.text = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NksifQ.eyJpc3MiOiIyb21SSlpMMjNaQ1lnYzFyWnJG" +
                                      "VnBGWEpwV29hRUV1SlVjZiIsImlhdCI6MTUxOTM1MDI1NiwicGVybWlzc2lvbnMiOlsibm90aWZ" +
@@ -62,6 +67,7 @@ class JWTVerificationViewController : UIViewController
         }
 
         button.isEnabled = false
+        button.alpha = 0.333
         activityIndicator.startAnimating()
         payloadLabel.text = nil
 
@@ -69,6 +75,7 @@ class JWTVerificationViewController : UIViewController
         JWTTools.verify(jwt: jwt)
         { (payload, error) in
             button.isEnabled = true
+            button.alpha = 1
             self.activityIndicator.stopAnimating()
 
             if error == nil

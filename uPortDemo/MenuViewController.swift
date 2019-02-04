@@ -35,11 +35,16 @@ class MenuViewController: UITableViewController
         self.title = "Menu"
     }
 
-    override func viewDidLoad()
+    override func viewWillAppear(_ animated: Bool)
     {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
 
-        Styling.addLogoBackground(to: self.tableView)
+        if tableView.backgroundView == nil
+        {
+            tableView.backgroundView = UIView(frame: tableView.frame)
+        }
+        
+        Styling.addLogoBackground(to: tableView.backgroundView!)
     }
 
     required init?(coder aDecoder: NSCoder)

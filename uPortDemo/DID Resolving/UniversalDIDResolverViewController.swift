@@ -10,5 +10,21 @@ import UIKit
 
 class UniversalDIDResolverViewController: UIViewController
 {
-    
+    required init()
+    {
+        super.init(nibName: "UniversalDIDResolverViewController", bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder)
+    {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+
+        self.view.backgroundColor = Styling.backgroundGrey
+        Styling.addLogoBackground(to: self.view)
+    }
 }

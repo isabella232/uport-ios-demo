@@ -15,6 +15,7 @@
                 <outlet property="activityIndicator" destination="cpi-tf-iD9" id="pAG-mH-yBb"/>
                 <outlet property="incomingJwtLabel" destination="LIj-ba-uYR" id="G7Y-vp-Goz"/>
                 <outlet property="payloadLabel" destination="yWk-u5-IpW" id="XrJ-WA-jzb"/>
+                <outlet property="verifyButton" destination="lpC-A7-PTb" id="TiZ-Cg-fXc"/>
                 <outlet property="view" destination="iN0-l3-epB" id="w1B-Ch-xm7"/>
             </connections>
         </placeholder>
@@ -29,18 +30,19 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpC-A7-PTb">
-                    <rect key="frame" x="150" y="56" width="75" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpC-A7-PTb">
+                    <rect key="frame" x="143" y="56" width="89" height="34"/>
                     <state key="normal" title="Verify JWT"/>
                     <connections>
                         <action selector="resolveActionWithButton:" destination="-1" eventType="touchUpInside" id="aeK-cP-OUW"/>
                     </connections>
                 </button>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-tf-iD9">
-                    <rect key="frame" x="177.5" y="61" width="20" height="20"/>
+                    <rect key="frame" x="177.5" y="63" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="payload result" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWk-u5-IpW">
-                    <rect key="frame" x="16" y="101" width="343" height="16"/>
+                    <rect key="frame" x="16" y="103" width="343" height="16"/>
                     <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
