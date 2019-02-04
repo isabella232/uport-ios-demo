@@ -9,6 +9,7 @@
 import UIKit
 import UPort
 
+/// Class needed to enable verification of the already expired hard-coded JWT.
 class DateProvider: JWTToolsDateProvider
 {
     var date: Date
@@ -59,7 +60,7 @@ class JWTVerificationViewController : UIViewController
         self.payloadLabel.text = nil
     }
 
-    @IBAction func resolveAction(button: UIButton)
+    @IBAction func verifyAction(button: UIButton)
     {
         guard let jwt = incomingJwtLabel.text else
         {
@@ -71,7 +72,10 @@ class JWTVerificationViewController : UIViewController
         activityIndicator.startAnimating()
         payloadLabel.text = nil
 
+        // The `dateProvider` was exposed to allow verification of expired JWT (in tests and demo code).  Do not set
+        // `dataProvider` in production code!
         JWTTools.dateProvider = DateProvider(date: Date(timeIntervalSince1970: 1522540300))
+
         JWTTools.verify(jwt: jwt)
         { (payload, error) in
             button.isEnabled = true

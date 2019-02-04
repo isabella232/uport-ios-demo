@@ -31,10 +31,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpC-A7-PTb">
-                    <rect key="frame" x="143" y="56" width="89" height="34"/>
+                    <rect key="frame" x="16" y="56" width="343" height="34"/>
                     <state key="normal" title="Verify JWT"/>
                     <connections>
-                        <action selector="resolveActionWithButton:" destination="-1" eventType="touchUpInside" id="aeK-cP-OUW"/>
+                        <action selector="verifyActionWithButton:" destination="-1" eventType="touchUpInside" id="lFd-x1-g9a"/>
                     </connections>
                 </button>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-tf-iD9">
@@ -51,9 +51,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="LIj-ba-uYR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="14o-d1-aHS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lpC-A7-PTb" secondAttribute="trailing" constant="16" id="2j8-4z-Qam"/>
                 <constraint firstItem="lpC-A7-PTb" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="EfM-e4-hGP"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LIj-ba-uYR" secondAttribute="trailing" constant="16" id="F45-34-RhJ"/>
                 <constraint firstItem="lpC-A7-PTb" firstAttribute="top" secondItem="LIj-ba-uYR" secondAttribute="bottom" constant="20" id="QBi-GW-Eka"/>
+                <constraint firstItem="lpC-A7-PTb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="UWs-cp-DXd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yWk-u5-IpW" secondAttribute="trailing" constant="16" id="ViT-ki-yao"/>
                 <constraint firstItem="yWk-u5-IpW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ZBd-wF-Emr"/>
                 <constraint firstItem="cpi-tf-iD9" firstAttribute="centerX" secondItem="lpC-A7-PTb" secondAttribute="centerX" id="ceQ-MN-ZDw"/>
@@ -65,9 +67,5 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="132" y="154.27286356821591"/>
         </view>
-        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="1Pz-Af-Tcs">
-            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-        </activityIndicatorView>
     </objects>
 </document>

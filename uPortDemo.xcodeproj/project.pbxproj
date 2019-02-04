@@ -144,12 +144,12 @@
 		48B036C322039DAA0067A2D9 /* DID Resolving */ = {
 			isa = PBXGroup;
 			children = (
-				48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */,
-				488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */,
 				48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */,
 				4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */,
 				48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */,
 				4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */,
+				48B036C622039E360067A2D9 /* UniversalDIDResolverViewController.swift */,
+				488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */,
 			);
 			path = "DID Resolving";
 			sourceTree = "<group>";

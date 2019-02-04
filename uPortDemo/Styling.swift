@@ -42,7 +42,7 @@ class Styling
         imageView.frame = view.convert(topView.frame, from: topView)
 
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = UIColor(white: 0.2, alpha: 0.02)
+        imageView.tintColor = UIColor(white: 0.2, alpha: 0.05)
         imageView.transform = CGAffineTransform(scaleX: 0.618, y: 0.618)
 
         view.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]

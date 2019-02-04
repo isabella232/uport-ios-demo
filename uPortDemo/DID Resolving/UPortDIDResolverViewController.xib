@@ -12,16 +12,60 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UPortDIDResolverViewController" customModule="uPortDemo" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="jWJ-yS-gKY"/>
+                <outlet property="activityIndicator" destination="jwa-5l-BHC" id="uWx-QG-sYs"/>
+                <outlet property="didLabel" destination="VGT-3y-Ax1" id="0M5-wJ-QV3"/>
+                <outlet property="resolveButton" destination="JzY-Iv-i8g" id="0vb-LW-aMa"/>
+                <outlet property="resultLabel" destination="I2H-Kz-nlw" id="lf1-35-A8d"/>
+                <outlet property="view" destination="ayv-9f-5QZ" id="zFO-Q2-DOJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="ayv-9f-5QZ">
             <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DID" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGT-3y-Ax1">
+                    <rect key="frame" x="16" y="20" width="343" height="16"/>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzY-Iv-i8g">
+                    <rect key="frame" x="16" y="56" width="343" height="34"/>
+                    <state key="normal" title="Resolve uPort DID"/>
+                    <connections>
+                        <action selector="resolveActionWithButton:" destination="-1" eventType="touchUpInside" id="Gzg-6X-zwl"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-5l-BHC">
+                    <rect key="frame" x="177.5" y="63" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-Kz-nlw">
+                    <rect key="frame" x="16" y="103" width="343" height="16"/>
+                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VGT-3y-Ax1" firstAttribute="leading" secondItem="6CO-7d-X89" secondAttribute="leading" constant="16" id="0CF-Eb-6s5"/>
+                <constraint firstItem="jwa-5l-BHC" firstAttribute="centerX" secondItem="JzY-Iv-i8g" secondAttribute="centerX" id="0cw-yj-f4Q"/>
+                <constraint firstItem="VGT-3y-Ax1" firstAttribute="top" secondItem="6CO-7d-X89" secondAttribute="top" constant="20" id="5dl-5F-lFe"/>
+                <constraint firstItem="I2H-Kz-nlw" firstAttribute="top" secondItem="jwa-5l-BHC" secondAttribute="bottom" constant="20" id="Eve-WB-sk6"/>
+                <constraint firstItem="jwa-5l-BHC" firstAttribute="centerY" secondItem="JzY-Iv-i8g" secondAttribute="centerY" id="J96-Ni-C9X"/>
+                <constraint firstItem="6CO-7d-X89" firstAttribute="trailing" secondItem="I2H-Kz-nlw" secondAttribute="trailing" constant="16" id="QNp-Rb-uHY"/>
+                <constraint firstItem="I2H-Kz-nlw" firstAttribute="leading" secondItem="6CO-7d-X89" secondAttribute="leading" constant="16" id="TlR-2K-WEC"/>
+                <constraint firstItem="JzY-Iv-i8g" firstAttribute="leading" secondItem="6CO-7d-X89" secondAttribute="leading" constant="16" id="Ydt-ve-d0u"/>
+                <constraint firstItem="6CO-7d-X89" firstAttribute="trailing" secondItem="VGT-3y-Ax1" secondAttribute="trailing" constant="16" id="gCG-jR-f04"/>
+                <constraint firstItem="JzY-Iv-i8g" firstAttribute="centerX" secondItem="6CO-7d-X89" secondAttribute="centerX" id="l2x-KF-lOf"/>
+                <constraint firstItem="6CO-7d-X89" firstAttribute="trailing" secondItem="JzY-Iv-i8g" secondAttribute="trailing" constant="16" id="nbL-2R-i26"/>
+                <constraint firstItem="JzY-Iv-i8g" firstAttribute="top" secondItem="VGT-3y-Ax1" secondAttribute="bottom" constant="20" id="oNr-X1-JZM"/>
+            </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <viewLayoutGuide key="safeArea" id="6CO-7d-X89"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
         </view>
     </objects>
 </document>
