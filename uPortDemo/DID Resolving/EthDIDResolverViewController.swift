@@ -49,8 +49,8 @@ class EthDIDResolverViewController: UIViewController
 
         button.isEnabled = false
         button.alpha = 0.333
-        activityIndicator.startAnimating()
-        resultLabel.text = nil
+        self.activityIndicator.startAnimating()
+        self.resultLabel.text = nil
 
         resolveAsync(did: did)
         { (document, error) in

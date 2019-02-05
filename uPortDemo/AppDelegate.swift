@@ -16,17 +16,17 @@ import UIKit
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
+        self.window = UIWindow(frame: frame)
 
         let menuViewController = MenuViewController()
         let navigationController = UINavigationController(rootViewController: menuViewController)
 
         Styling.styleNavigationBars()
 
-        window!.rootViewController = navigationController
-        window!.makeKeyAndVisible()
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
 
-        // Keep LaunchScreen visible a bit longer.
+        // Keep LaunchScreen visible a bit longer.  (Don't do this at home; it's just a quick fix for this demo.)
         RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1) as Date)
 
         return true

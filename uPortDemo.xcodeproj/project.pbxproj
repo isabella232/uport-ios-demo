@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4853D85522091406005557C7 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4853D85422091406005557C7 /* EncryptDecryptViewController.swift */; };
+		4853D8572209141E005557C7 /* EncryptDecryptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4853D8562209141E005557C7 /* EncryptDecryptViewController.xib */; };
+		4853D8592209BD25005557C7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4853D8582209BD25005557C7 /* CryptoSwift.framework */; };
+		4853D85A2209BD40005557C7 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4853D8582209BD25005557C7 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488280FF22049B010023AD23 /* UniversalDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */; };
 		4882810122049B1A0023AD23 /* UPortDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */; };
@@ -43,12 +47,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */,
+				4853D85A2209BD40005557C7 /* CryptoSwift.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4853D85422091406005557C7 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
+		4853D8562209141E005557C7 /* EncryptDecryptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EncryptDecryptViewController.xib; sourceTree = "<group>"; };
+		4853D8582209BD25005557C7 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversalDIDResolverViewController.xib; sourceTree = "<group>"; };
 		4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPortDIDResolverViewController.xib; sourceTree = "<group>"; };
 		4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EthDIDResolverViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4853D8592209BD25005557C7 /* CryptoSwift.framework in Frameworks */,
 				48B036D2220466BE0067A2D9 /* UPort.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4853D853220913B3005557C7 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4853D85422091406005557C7 /* EncryptDecryptViewController.swift */,
+				4853D8562209141E005557C7 /* EncryptDecryptViewController.xib */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
 		48B03692220351AE0067A2D9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +135,7 @@
 				48B036BE2203934B0067A2D9 /* MenuViewController.swift */,
 				48B036C222039DA30067A2D9 /* JWT */,
 				48B036C322039DAA0067A2D9 /* DID Resolving */,
+				4853D853220913B3005557C7 /* Crypto */,
 				48B036A5220351AF0067A2D9 /* Assets.xcassets */,
 				48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */,
 			);
@@ -157,6 +176,7 @@
 		48B036D0220466BE0067A2D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4853D8582209BD25005557C7 /* CryptoSwift.framework */,
 				48B036D1220466BE0067A2D9 /* UPort.framework */,
 			);
 			name = Frameworks;
@@ -249,6 +269,7 @@
 				48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */,
 				488280FF22049B010023AD23 /* UniversalDIDResolverViewController.xib in Resources */,
 				4882810322049B3C0023AD23 /* EthDIDResolverViewController.xib in Resources */,
+				4853D8572209141E005557C7 /* EncryptDecryptViewController.xib in Resources */,
 				48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +291,7 @@
 				48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */,
 				48B036C722039E360067A2D9 /* UniversalDIDResolverViewController.swift in Sources */,
 				48B036BF2203934B0067A2D9 /* MenuViewController.swift in Sources */,
+				4853D85522091406005557C7 /* EncryptDecryptViewController.swift in Sources */,
 				48B036C522039DDF0067A2D9 /* JWTVerificationViewController.swift in Sources */,
 				48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */,
 				48B036C1220395840067A2D9 /* Styling.swift in Sources */,
@@ -358,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -413,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = consensys.net.uPortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

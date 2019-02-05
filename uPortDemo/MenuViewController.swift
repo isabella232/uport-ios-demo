@@ -26,6 +26,12 @@ class MenuViewController: UITableViewController
                 [ "Eth DID Resolver" : EthDIDResolverViewController.self ],
                 [ "Universal DID Resolver" : UniversalDIDResolverViewController.self ]
             ]
+        ],
+        [
+            "Crypto" :
+            [
+                [ "Encrypt / Decrypt" : EncryptDecryptViewController.self ]
+            ]
         ]
     ]
 
@@ -39,9 +45,9 @@ class MenuViewController: UITableViewController
     {
         super.viewWillAppear(animated)
 
-        if tableView.backgroundView == nil
+        if self.tableView.backgroundView == nil
         {
-            tableView.backgroundView = UIView(frame: tableView.frame)
+            self.tableView.backgroundView = UIView(frame: tableView.frame)
         }
         
         Styling.addLogoBackground(to: tableView.backgroundView!)
@@ -56,17 +62,17 @@ class MenuViewController: UITableViewController
 
     override func numberOfSections(in tableView: UITableView) -> Int
     {
-        return structure.count
+        return self.structure.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return structure[section].values.first!.count
+        return self.structure[section].values.first!.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
     {
-        return structure[section].keys.first
+        return self.structure[section].keys.first
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -94,6 +100,6 @@ class MenuViewController: UITableViewController
         let viewController = items[indexPath.row].values.first!.init()
         viewController.title = items[indexPath.row].keys.first
 
-        navigationController?.pushViewController(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

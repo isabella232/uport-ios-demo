@@ -62,15 +62,15 @@ class JWTVerificationViewController : UIViewController
 
     @IBAction func verifyAction(button: UIButton)
     {
-        guard let jwt = incomingJwtLabel.text else
+        guard let jwt = self.incomingJwtLabel.text else
         {
             return
         }
 
         button.isEnabled = false
         button.alpha = 0.333
-        activityIndicator.startAnimating()
-        payloadLabel.text = nil
+        self.activityIndicator.startAnimating()
+        self.payloadLabel.text = nil
 
         // The `dateProvider` was exposed to allow verification of expired JWT (in tests and demo code).  Do not set
         // `dataProvider` in production code!
