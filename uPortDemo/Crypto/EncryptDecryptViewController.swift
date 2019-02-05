@@ -54,6 +54,8 @@ class EncryptDecryptViewController: UIViewController, UITextFieldDelegate
         self.encryptButton.isHidden = self.sourceTextField.text?.isEmpty ?? true
     }
 
+    // MARK: - Actions
+
     @IBAction func sourceTextChangedAction(textField: UITextField)
     {
         self.clear()
@@ -76,6 +78,11 @@ class EncryptDecryptViewController: UIViewController, UITextFieldDelegate
 
         self.targetLabel.isHidden = false
         self.targetLabel.text = Crypto.decrypt(encrypted: self.encryptedMessage!, secretKey: boxSecret)
+    }
+
+    @IBAction func tapAction()
+    {
+        self.sourceTextField.resignFirstResponder()
     }
 
     // MARK: - Text Field Delegate
