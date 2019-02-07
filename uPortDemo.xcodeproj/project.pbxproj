@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		4853D85522091406005557C7 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4853D85422091406005557C7 /* EncryptDecryptViewController.swift */; };
 		4853D8572209141E005557C7 /* EncryptDecryptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4853D8562209141E005557C7 /* EncryptDecryptViewController.xib */; };
-		4853D8592209BD25005557C7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4853D8582209BD25005557C7 /* CryptoSwift.framework */; };
-		4853D85A2209BD40005557C7 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4853D8582209BD25005557C7 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488280FF22049B010023AD23 /* UniversalDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */; };
 		4882810122049B1A0023AD23 /* UPortDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */; };
 		4882810322049B3C0023AD23 /* EthDIDResolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */; };
+		4883596A220C72B0009A6F5E /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835961220C72AF009A6F5E /* openssl.framework */; };
+		4883596B220C72B0009A6F5E /* Valet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835962220C72AF009A6F5E /* Valet.framework */; };
+		4883596C220C72B0009A6F5E /* CoreEth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835963220C72AF009A6F5E /* CoreEth.framework */; };
+		4883596D220C72B0009A6F5E /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835964220C72B0009A6F5E /* CryptoSwift.framework */; };
+		4883596E220C72B0009A6F5E /* UPort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835965220C72B0009A6F5E /* UPort.framework */; };
+		4883596F220C72B0009A6F5E /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835966220C72B0009A6F5E /* SipHash.framework */; };
+		48835970220C72B0009A6F5E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835967220C72B0009A6F5E /* Sodium.framework */; };
+		48835971220C72B0009A6F5E /* UPTEthereumSigner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835968220C72B0009A6F5E /* UPTEthereumSigner.framework */; };
+		48835972220C72B0009A6F5E /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835969220C72B0009A6F5E /* BigInt.framework */; };
 		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
 		48B036A6220351AF0067A2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A5220351AF0067A2D9 /* Assets.xcassets */; };
 		48B036A9220351AF0067A2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B036A7220351AF0067A2D9 /* LaunchScreen.storyboard */; };
@@ -26,7 +32,6 @@
 		48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */; };
 		48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */; };
 		48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */; };
-		48B036D2220466BE0067A2D9 /* UPort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B036D1220466BE0067A2D9 /* UPort.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,27 +44,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		488280FC22047BC10023AD23 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				488280FD22047BD20023AD23 /* UPort.framework in CopyFiles */,
-				4853D85A2209BD40005557C7 /* CryptoSwift.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		4853D85422091406005557C7 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
 		4853D8562209141E005557C7 /* EncryptDecryptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EncryptDecryptViewController.xib; sourceTree = "<group>"; };
-		4853D8582209BD25005557C7 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		488280FE22049B010023AD23 /* UniversalDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversalDIDResolverViewController.xib; sourceTree = "<group>"; };
 		4882810022049B1A0023AD23 /* UPortDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPortDIDResolverViewController.xib; sourceTree = "<group>"; };
 		4882810222049B3C0023AD23 /* EthDIDResolverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EthDIDResolverViewController.xib; sourceTree = "<group>"; };
+		48835961220C72AF009A6F5E /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Carthage/Build/iOS/openssl.framework; sourceTree = "<group>"; };
+		48835962220C72AF009A6F5E /* Valet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Valet.framework; path = Carthage/Build/iOS/Valet.framework; sourceTree = "<group>"; };
+		48835963220C72AF009A6F5E /* CoreEth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreEth.framework; path = Carthage/Build/iOS/CoreEth.framework; sourceTree = "<group>"; };
+		48835964220C72B0009A6F5E /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		48835965220C72B0009A6F5E /* UPort.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPort.framework; path = Carthage/Build/iOS/UPort.framework; sourceTree = "<group>"; };
+		48835966220C72B0009A6F5E /* SipHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SipHash.framework; path = Carthage/Build/iOS/SipHash.framework; sourceTree = "<group>"; };
+		48835967220C72B0009A6F5E /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/iOS/Sodium.framework; sourceTree = "<group>"; };
+		48835968220C72B0009A6F5E /* UPTEthereumSigner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPTEthereumSigner.framework; path = Carthage/Build/iOS/UPTEthereumSigner.framework; sourceTree = "<group>"; };
+		48835969220C72B0009A6F5E /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BigInt.framework; path = Carthage/Build/iOS/BigInt.framework; sourceTree = "<group>"; };
 		48B0369B220351AE0067A2D9 /* uPortDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uPortDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B0369E220351AE0067A2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B036A5220351AF0067A2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 		48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPortDIDResolverViewController.swift; sourceTree = "<group>"; };
 		48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthDIDResolverViewController.swift; sourceTree = "<group>"; };
 		48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWTVerificationViewController.xib; sourceTree = "<group>"; };
-		48B036D1220466BE0067A2D9 /* UPort.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPort.framework; path = Carthage/Build/iOS/UPort.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +81,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4853D8592209BD25005557C7 /* CryptoSwift.framework in Frameworks */,
-				48B036D2220466BE0067A2D9 /* UPort.framework in Frameworks */,
+				48835972220C72B0009A6F5E /* BigInt.framework in Frameworks */,
+				4883596C220C72B0009A6F5E /* CoreEth.framework in Frameworks */,
+				4883596D220C72B0009A6F5E /* CryptoSwift.framework in Frameworks */,
+				4883596A220C72B0009A6F5E /* openssl.framework in Frameworks */,
+				4883596F220C72B0009A6F5E /* SipHash.framework in Frameworks */,
+				48835970220C72B0009A6F5E /* Sodium.framework in Frameworks */,
+				48835971220C72B0009A6F5E /* UPTEthereumSigner.framework in Frameworks */,
+				4883596E220C72B0009A6F5E /* UPort.framework in Frameworks */,
+				4883596B220C72B0009A6F5E /* Valet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +181,15 @@
 		48B036D0220466BE0067A2D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4853D8582209BD25005557C7 /* CryptoSwift.framework */,
-				48B036D1220466BE0067A2D9 /* UPort.framework */,
+				48835969220C72B0009A6F5E /* BigInt.framework */,
+				48835963220C72AF009A6F5E /* CoreEth.framework */,
+				48835964220C72B0009A6F5E /* CryptoSwift.framework */,
+				48835961220C72AF009A6F5E /* openssl.framework */,
+				48835966220C72B0009A6F5E /* SipHash.framework */,
+				48835967220C72B0009A6F5E /* Sodium.framework */,
+				48835965220C72B0009A6F5E /* UPort.framework */,
+				48835968220C72B0009A6F5E /* UPTEthereumSigner.framework */,
+				48835962220C72AF009A6F5E /* Valet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,7 +204,7 @@
 				48B03697220351AE0067A2D9 /* Sources */,
 				48B03698220351AE0067A2D9 /* Frameworks */,
 				48B03699220351AE0067A2D9 /* Resources */,
-				488280FC22047BC10023AD23 /* CopyFiles */,
+				486558F4220B88160036659B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -282,6 +294,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		486558F4220B88160036659B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BigInt.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CoreEth.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/openssl.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SipHash.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sodium.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UPTEthereumSigner.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UPort.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Valet.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BigInt.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CoreEth.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CryptoSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/openssl.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SipHash.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Sodium.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/UPTEthereumSigner.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/UPort.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Valet.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48B03697220351AE0067A2D9 /* Sources */ = {
