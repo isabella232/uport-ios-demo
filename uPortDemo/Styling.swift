@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// General UI properties.
+/// Shared UI properties and functions.
 class Styling
 {
     static let uPortPurple = UIColor(red: 0.36, green: 0.31, blue: 0.79, alpha: 1.0)
@@ -23,6 +23,7 @@ class Styling
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 
+    /// Adds uPort logo at the center of the screen.
     static func addLogoBackground(to view: UIView)
     {
         guard let topView = UIApplication.shared.keyWindow?.rootViewController?.view else
@@ -30,22 +31,19 @@ class Styling
             return
         }
 
-        let tag = 1111
+        let tag = 1111  // Just some value.
         guard view.viewWithTag(tag) == nil else
         {
             return
         }
 
         let imageView = UIImageView(image: UIImage(named: "VerticalLogo"))
+
         imageView.tag = tag
-
         imageView.frame = view.convert(topView.frame, from: topView)
-
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = UIColor(white: 0.2, alpha: 0.05)
-        imageView.transform = CGAffineTransform(scaleX: 0.618, y: 0.618)
-
-        view.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]
+        imageView.transform = CGAffineTransform(scaleX: 0.618, y: 0.618) // Same factor as in LaunchScreen constraint.
 
         view.addSubview(imageView);
     }
