@@ -5,7 +5,7 @@ This repository is an example of how to setup an iOS app that uses the **uPort**
 
 ## Getting Started With the Demo App
 
-The **uPort** iOS SDK and its constituting frameworks use [Carthage](https://github.com/Carthage/Carthage) as dependency manager. We chose Carthage over [CocoaPods](https://cocoapods.org) because it's simple and nonintrusive.
+The **uPort** iOS SDK and its frameworks use [Carthage](https://github.com/Carthage/Carthage) as dependency manager. We chose Carthage over [CocoaPods](https://cocoapods.org) because it's simple and nonintrusive.
 
 ### Installing Carthage
 
@@ -15,7 +15,7 @@ If you have [Homebrew (also known as Brew)](https://brew.sh) installed on your m
 brew install carthage
 ```
 
-Otherwise you can install the latest `Cathage.pkg` which you can [download here](https://github.com/Carthage/Carthage/releases).
+Otherwise, you could download and install the latest [`Cathage.pkg`](https://github.com/Carthage/Carthage/releases).
 
 ### Getting the uPort SDK
 
@@ -31,7 +31,7 @@ This command is also available from the included `build` script. So alternativel
 ./build
 ```
 
-This git clones the **uPort** SDK's repositories and subsequently builds them as iOS frameworks.
+This git-clones the **uPort** SDK's repositories and subsequently builds them as iOS frameworks.
 
 ### Running the Demo App
 
@@ -39,14 +39,12 @@ If you open the `uPortDemo.xcodeproj` Xcode project, the app should build and ru
 
 ### Feel Free
 
-This demo app is under the MIT license, so it's totally fine to copy and use it as the base of your new app.
+This demo app uses the [MIT license](LICENSE.txt), so it's totally fine to copy and use it as the base of your new app.
 
 
 ## Adding the uPort SDK to Your App
 
-Now that you have Carthage installed and may have had a look at our demo app, let's see how you add the **uPort** SDK to your app.
-
-For a more general details have a look at the [Carthage documentation](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+Now that you may have had a look at our demo app, let's see how you add the **uPort** SDK to your app.
 
 ### 1. Copy-Paste the Cartfile
 
@@ -75,11 +73,11 @@ Carthage/Build
 
 ### 4. Drag Frameworks Into Xcode Target
 
-Drag all `.framework` 'files' from `Carthage/Build/iOS/` into your Xcode target's *Build Phases > Link Binary With Libraries* section.
+Drag all built `.framework` 'files' from `Carthage/Build/iOS/` into your Xcode target's *Build Phases > Link Binary With Libraries* section.
 
-Currently these are: `BigInt.framework`, `CoreEth.framework`, `CryptoSwift.framework`, `openssl.framework`, `UPTEthereumSigner.framework`, `Uport.framework`, and `Valet.framework`.
+Currently these are: `BigInt.framework`, `CoreEth.framework`, `CryptoSwift.framework`, `openssl.framework`, `SipHash.framework`, `Sodium.framework`, `UPTEthereumSigner.framework`, `Uport.framework`, and `Valet.framework`.
 
-### 5. Add Copy-frameworks Run Script
+### 5. Add Carthage's Copy-Frameworks Run Script
 
 On your application target’s *Build Phases* tab, click the *+* icon at top-right and create a *New Run Script Phase* with the following contents:
 
@@ -120,6 +118,8 @@ Remarks:
 2. This script works, but some say it's error prone. In case you encounter issues with submitting your app to Apple, try [this](https://github.com/lvillani/carthage-copy-frameworks).
 3. Without this step or if you make a mistake (e.g. a typo in one of the *Input Files*), the app builds. But it fails to run and Xcode prints an error that looks like:
 `dyld: Library not loaded: @rpath/UPort.framework/UPort Referenced from: .../uPortDemo.app/uPortDemo Reason: image not found`
+
+For more general details have a look at the [Carthage documentation](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
 
 ## License
 
