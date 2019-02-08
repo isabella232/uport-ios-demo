@@ -1,7 +1,7 @@
 github "attaswift/BigInt" "v3.1.0"
 github "attaswift/SipHash" "v1.2.2"
 github "jedisct1/swift-sodium" "0.7.0"
-github "krzyzanowskim/CryptoSwift" "0.13.1"
+github "krzyzanowskim/CryptoSwift" "0.14.0"
 github "square/Valet" "2.4.2"
 github "uport-project/CoreEth" "v1.0.0"
 github "uport-project/UPTEthereumSigner" "7085c81055e5c32c5eec4c18e2bbd97fefeca380"

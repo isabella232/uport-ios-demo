@@ -1,6 +1,6 @@
 # uPort Demo App for iOS
 
-This repository is an example of how to setup an iOS app that uses the **uPort** SDK.
+This repository shows how to setup an iOS app that uses the [**uPort** SDK](https://github.com/uport-project/uport-ios-sdk).
 
 
 ## Getting Started With the Demo App
@@ -50,9 +50,11 @@ Now that you may have had a look at our demo app, let's see how you add the **uP
 
 Copy the `Cartfile` (from this demo app's root directory) to your app directory; preferably place it in the root directory. You need to add this file to your git repository as it tell Carthage where the **uPort** SDK can be found and which version to use.
 
+If you wish, also copy the `build` script.
+
 ### 2. Get the uPort SDK
 
-As written above, run:
+To download and build the SDK's frameworks, run:
 
 ```console
 carthage update --platform iOS --no-use-binaries --cache-builds
@@ -99,7 +101,7 @@ $(SRCROOT)/Carthage/Build/iOS/UPort.framework
 $(SRCROOT)/Carthage/Build/iOS/Valet.framework
 ```
 
-And, the final step for this Run Script Phases is to add the *Output Files*:
+Finally add the *Output Files* for this Run Script Phase:
 
 ```
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BigInt.framework
@@ -114,12 +116,18 @@ $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Valet.framework
 ```
 
 Remarks:
-1. You may think that this could also be done by adding a `New Copy Files Phase` where you drag in the frameworks and select `Frameworks` as `Destination`. This has indeed the same effect, but `carthage copy-frameworks` does more.
-2. This script works, but some say it's error prone. In case you encounter issues with submitting your app to Apple, try [this](https://github.com/lvillani/carthage-copy-frameworks).
+1. You may think that this could also be done by adding a `New Copy Files Phase` where you drag in the frameworks and select `Frameworks` as `Destination`. This has indeed the same effect, but `carthage copy-frameworks` strips x86/Simulator from the framework binaries to [work around an old App Store submission issue](https://stackoverflow.com/a/39269506/1971013).
+2. This script works, but some say it's error prone. In case you encounter issues with submitting your app, try [this](https://github.com/lvillani/carthage-copy-frameworks).
 3. Without this step or if you make a mistake (e.g. a typo in one of the *Input Files*), the app builds. But it fails to run and Xcode prints an error that looks like:
 `dyld: Library not loaded: @rpath/UPort.framework/UPort Referenced from: .../uPortDemo.app/uPortDemo Reason: image not found`
 
 For more general details have a look at the [Carthage documentation](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+
+
+## Using the uPort SDK In Your Code
+
+Although the SDK consists of a list of frameworks, you only need `import UPort` for Swift or `#import UPort;` for Objective-C to include the full SDK.
+
 
 ## License
 
