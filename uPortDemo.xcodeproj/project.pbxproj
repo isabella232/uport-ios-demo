@@ -31,6 +31,7 @@
 		48B036C922039E610067A2D9 /* UPortDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036C822039E610067A2D9 /* UPortDIDResolverViewController.swift */; };
 		48B036CB22039E830067A2D9 /* EthDIDResolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B036CA22039E830067A2D9 /* EthDIDResolverViewController.swift */; };
 		48B036CD2203A4220067A2D9 /* JWTVerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B036CC2203A4220067A2D9 /* JWTVerificationViewController.xib */; };
+		48C1582722143A4A009A909D /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835967220C72B0009A6F5E /* Sodium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 				4883596F220C72B0009A6F5E /* SipHash.framework in Frameworks */,
 				48835971220C72B0009A6F5E /* UPTEthereumSigner.framework in Frameworks */,
 				4883596E220C72B0009A6F5E /* UPort.framework in Frameworks */,
+				48C1582722143A4A009A909D /* Sodium.framework in Frameworks */,
 				4883596B220C72B0009A6F5E /* Valet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
