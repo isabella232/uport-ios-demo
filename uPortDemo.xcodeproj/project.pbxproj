@@ -18,7 +18,6 @@
 		4883596D220C72B0009A6F5E /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835964220C72B0009A6F5E /* CryptoSwift.framework */; };
 		4883596E220C72B0009A6F5E /* UPort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835965220C72B0009A6F5E /* UPort.framework */; };
 		4883596F220C72B0009A6F5E /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835966220C72B0009A6F5E /* SipHash.framework */; };
-		48835970220C72B0009A6F5E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835967220C72B0009A6F5E /* Sodium.framework */; };
 		48835971220C72B0009A6F5E /* UPTEthereumSigner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835968220C72B0009A6F5E /* UPTEthereumSigner.framework */; };
 		48835972220C72B0009A6F5E /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48835969220C72B0009A6F5E /* BigInt.framework */; };
 		48B0369F220351AE0067A2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0369E220351AE0067A2D9 /* AppDelegate.swift */; };
@@ -86,7 +85,6 @@
 				4883596D220C72B0009A6F5E /* CryptoSwift.framework in Frameworks */,
 				4883596A220C72B0009A6F5E /* openssl.framework in Frameworks */,
 				4883596F220C72B0009A6F5E /* SipHash.framework in Frameworks */,
-				48835970220C72B0009A6F5E /* Sodium.framework in Frameworks */,
 				48835971220C72B0009A6F5E /* UPTEthereumSigner.framework in Frameworks */,
 				4883596E220C72B0009A6F5E /* UPort.framework in Frameworks */,
 				4883596B220C72B0009A6F5E /* Valet.framework in Frameworks */,
